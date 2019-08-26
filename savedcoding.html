@@ -1,0 +1,200 @@
+<html>
+    <head>
+        <title>VACANZA'19</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1">
+        <style>
+            #header{
+                background: url("background.png");
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-position:center;
+            }
+            .center{
+                text-align: center;
+            }
+            .button{
+                padding:15px 25px;
+                font-size:24px;
+                text-align:center;
+                cursor:pointer;
+                outline:none;
+                color:#fff;
+                background-color:#006666;
+                border:none;
+                border-radius:15px;
+                box-shadow:0 9px #999;
+            }
+            .button:hover{background-color:#3e8e41;}
+            .button:active{
+                background-color:3e8e41;
+                box-shadow:0 5px #666;
+                transform: translateY(4px);
+             
+             
+
+             }
+             .button1{
+                position:relative;
+                background-color:#006666;
+                border:none;
+                font-size:20px;
+                color:#FFFFFF;
+                padding:20px;
+                width:150px;
+                height:50px;
+                text-align:center;
+                transition-duration:0.4s;
+                text-decoration:none;
+                overflow:hidden;
+                cursor:pointer;
+             }
+             .button1:after{
+                content:"";
+                background:#f1f1f1;
+                display:block;
+                position:absolute;
+                padding-top:300%;
+                padding-left:350%;
+                margin-left:-20px  !important;
+                margin-top:-120%;
+                opacity:0;
+                transition:all 0.8s;
+             }
+             .button1:active:after
+             {
+                padding:0;
+                margin:0;
+                opacity:1;
+                transition:0s;
+             }
+             .container{
+                display:inline-block;
+                cursor:pointer;
+             }
+             .bar1,.bar2,.bar3{
+                width:35px;
+                height:5px;
+                background-color:#333;
+                margin:6px 0;
+                transition:0.4s;
+             }
+             .change .bar1{
+                transform:rotate(-45deg)
+                translate(-9px,6px);
+                transform:rotate(-45deg)
+                translate(-9px,6px);
+             }
+             .change .bar2{opacity:0;}
+             .change .bar3{
+                transform:rotate(45deg)
+                translate(-8px,-8px);
+             } 
+           .rota:hover
+           {
+              animation :rotation 5s infinite;
+           }
+
+           @keyframes rotation{
+            0%{
+                transform: rotate(12deg);
+            }
+            10%{
+                transform: rotate(24deg);
+            }
+            20%{
+                transform: rotate(36deg);
+            }
+            30%{
+                transform: rotate(48deg);
+            }
+            40%{
+                transform: rotate(60deg);
+            }
+
+            50%{
+                transform: rotate(72deg);
+            }
+            60%{
+                transform: rotate(84deg);
+            }
+            70%{
+                transform: rotate(96deg);
+            }
+            80%{
+                transform: rotate(108deg);
+            }
+            90%{
+                transform: rotate(120deg);
+            }
+            100%{
+                transform: rotate(132deg);
+            }
+
+            }
+           }
+
+
+            }</style>
+    </head>
+    <body>
+        <div class="container" 
+        onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div> 
+        <div align="center"><h3>CSI</h3></div>
+    </div>
+    <script>
+        function myFunction(x)
+        {
+            x.classList.toggle("change");
+        }</script>
+            <div id="header" align="right">
+                <!-- <img src="background.png" width="1000" height="600"> -->
+               <div class="center" > <img  class="rota" src="logo.png"></div>
+               <div class="center"><img src="vac.svg" width="500"></div>
+              <div class="center"> <a href="https://csiakgec.in/"> <button class="button">REGISTER</button></a>
+                <button class="button">START QUIZ</button>
+            </div> 
+
+            </div>
+            <div id="content">
+                <div id="round1">
+                    <h2>ROUND 1</h2>
+                    <hr>
+                    <p>Round 1 comprises of 4 domains from which participants have to select at least 2 domains and can choose maximum of four domains for more points.The more domain you opt for,the more you score.
+                    <h4>The four domains are:</h4>
+                    Vintage Photography  |  Leaf Collage  |  Origami Art  |  Face Mask Art</p>
+                    <button class="button1">RULES</button>
+                    <div class="left"><img src="vintage.jpg" width="500"></div>
+                </div>
+                <div id="round2">
+                    <h2>ROUND 2</h2>
+                    <hr>
+                    <p>Test your knowledge by just answering some basic questions and gain points easily.Round 2 contains quiz questions based on popular tv series and sports.
+                    <h4>The field are as follows:</h4>
+                    Football  |  Stranger Things  |  Cricket  |  Friends</p>
+                    <button class="button1">RULES</button>
+                    </div>
+                <div id="round3">
+                    <h2>ROUND 3</h2>
+                    <hr>
+                    <p>The final round consists of making an interesting and astonishing magic trick video which might force people to say"How did you do that!".The best and the most surprising video will be selected as the winner.</p>
+                    <button class="button1">RULES</button>
+                    </div>
+            <div id="footer" align="middle">
+                 <img src="footer.png" width="1300"height="50">
+                Copyright &copy; CSI:AKGEC 2019
+                
+                
+            </div>
+        </div>
+
+
+    
+        
+       
+    </body>
+</html>
